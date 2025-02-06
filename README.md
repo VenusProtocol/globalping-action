@@ -30,8 +30,7 @@ We use [act](https://github.com/nektos/act) to test our actions locally. If you 
 
 1. Create a `my.secrets` file. This file will contain all the secrets required in your workflow to test this action.
 2. Create a `.env.` within the root of this repository. This file will contain any environment variables required in your workflow to test this action.
-3. Update the `.github/workflows/regression.yml` file to test your action. This will include updating any `events` in the workflow and inputs.
-4. Update the `.github/workflows/regression/payload.yml` file, which contains the input payload for your action.
+3. Update the `.github/workflows/test.yml` file to test your action. This will include updating any `events` in the workflow and inputs.
 
 Once you have done the above, you are ready to test locally and run `yarn run local`. This will trigger `act` to run your workflow and, therefore, your action.
 

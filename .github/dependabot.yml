@@ -4,8 +4,6 @@ updates:
     directory: /
     schedule:
       interval: monthly
-    reviewers:
-      - "nickliffen"
     groups:
       dependencies:
         patterns:
@@ -14,8 +12,6 @@ updates:
     directory: /
     schedule:
       interval: monthly
-    reviewers:
-      - "nickliffen"
     groups:
       dependencies:
         patterns:
