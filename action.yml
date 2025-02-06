@@ -1,0 +1,14 @@
+name: 'Venus Globalping GitHub Action'
+author: 'Venus Protocol'
+description: 'A GitHub Action to ping a website from multiple locations using Globalping'
+inputs:
+  target:
+    description: 'Target (hostname, IPv4 or IPv6 address)'
+    required: true
+  countryCodes:
+    multiline: true
+    description: 'List of countries (based on ISO 3166-1 alpha-2 country codes) to ping the website from'
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
