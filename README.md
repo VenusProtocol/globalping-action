@@ -8,7 +8,7 @@ A GitHub Action to ping a website from multiple locations using [Globalping](htt
 
 ```yaml
 - name: Ping
-  uses: VenusProtocol/globalping-action
+  uses: VenusProtocol/globalping-action@main
   with:
     target: venus.io
     countryCodes: |

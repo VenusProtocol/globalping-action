@@ -1,4 +1,4 @@
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import { getInput, getMultilineInput, setFailed } from '@actions/core';
 import { context } from '@actions/github';
 
@@ -27,7 +27,9 @@ const run = async () => {
 
     console.log('Target successfully pinged:\n', output.data);
   } catch (error) {
-    setFailed(error as AxiosError);
+    setFailed('Failed to ping target');
+    console.log(error);
+    return;
   }
 };
 
